@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Bridge way Institute OF Technology</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body class="schoolbody">
+  <header class="schoolheader">
+    <nav>
+      <div class="logo">🏫 Bridge way Institute OF Technology</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="hero-section">
+      <h1>Contact Us</h1>
+      <p class="tagline">Get in Touch with Our Team</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <div class="info-card">
+          <h3>📍 Address</h3>
+          <p>Bridge way Institute OF Technology<br>123 Mbavu street<br>Nairobi City, TC 12345<br>Nairobi, Kenya</p>
+        </div>
+        <div class="info-card">
+          <h3>📞 Phone</h3>
+          <p><strong>Main Line:</strong> +254 700 123 455<br><strong>Admissions:</strong> +254 700 123 456<br><strong>Support:</strong> +254 700 123 457</p>
+        </div>
+        <div class="info-card">
+          <h3>📧 Email</h3>
+          <p><strong>General:</strong> info@bridgeway.edu<br><strong>Admissions:</strong> admissions@bridgeway.edu<br><strong>Support:</strong> support@bridgeway.edu</p>
+        </div>
+        <div class="info-card">
+          <h3>⏰ Office Hours</h3>
+          <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM<br><strong>Saturday:</strong> 10:00 AM - 3:00 PM<br><strong>Sunday:</strong> Closed</p>
+        </div>
+      </div>
+
+      <div class="contact-form-section">
+        <h2>Personal Information</h2>
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="course">Interested Course</label>
+            <select id="course" name="course">
+              <option value="">Select a course...</option>
+              <option value="Web Development Certificate">Certificate in Web Development</option>
+              <option value="Microsoft Office Diploma">Diploma in Microsoft Office</option>
+              <option value="Graphic Design Certificate">Certificate in Graphic Design</option>
+              <option value="Computer Networking Certificate">Certificate in Computer Networking</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a subject...</option>
+              <option value="course-application">Course Application</option>
+              <option value="inquiry">General Inquiry</option>
+              <option value="support">Technical Support</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Submit</button>
+          <div id="formStatus" class="form-status"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            How do I enroll in a course?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>You can apply for any course by filling out the form below. Our admissions team will contact you with course details and next steps.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            What is the refund policy?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We offer a 7-day money-back guarantee if you're not satisfied with the course. After 7 days, refunds are available based on course progress and completion.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            Are the certificates recognized by employers?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, our certificates are internationally recognized and valued by employers. Many of our graduates have successfully advanced their careers with our certifications.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            Can I access course materials after completion?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! You'll have lifetime access to all course materials, resources, and updates even after course completion.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            Do you offer payment plans?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, we offer flexible payment plans for all our courses. Contact our admissions team to discuss payment options that work best for you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 Bridge way Institute OF Technology. All rights reserved.</p>
+      <p>Empowering learners worldwide with quality education.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

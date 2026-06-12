@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Courses - Bridge way Institute OF Technology</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body class="schoolbody">
+  <header class="schoolheader">
+    <nav>
+      <div class="logo">🏫 Bridge way Institute OF Technology</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="courses.html" class="active">Courses</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="hero-section">
+      <h1>Our Professional Courses</h1>
+      <p class="tagline">Gain Industry-Recognized Certifications</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <div class="search-box">
+        <label for="courseSearch">Search Courses</label>
+        <input type="text" id="courseSearch" placeholder="Type to search...">
+      </div>
+      <div id="searchResults" class="search-results"></div>
+    </section>
+
+    <section class="courses-container">
+
+      <div class="course-detail" id="web-dev">
+        <div class="course-header">
+          <div class="course-icon-large">💻</div>
+          <h2>Certificate in Web Development</h2>
+        </div>
+        <div class="course-info">
+          <div class="course-meta">
+            <p><strong>Duration:</strong> 12 Weeks</p>
+            <p><strong>Level:</strong> Beginner to Intermediate</p>
+            <p><strong>Certificate:</strong> International</p>
+            <p><strong>Fee:</strong> KSh 75,000</p>
+          </div>
+          <div class="course-content">
+            <h3>Course Overview</h3>
+            <p>Master the fundamentals and advanced concepts of web development. Learn to build responsive, interactive websites using modern technologies.</p>
+            
+            <h3>What You'll Learn</h3>
+            <ul>
+              <li>HTML5 & CSS3 for semantic markup and styling</li>
+              <li>JavaScript ES6+ for dynamic interactivity</li>
+              <li>React or Vue.js framework fundamentals</li>
+              <li>RESTful APIs and asynchronous programming</li>
+              <li>Version control with Git and GitHub</li>
+              <li>Responsive design and mobile-first approach</li>
+              <li>Web hosting and deployment</li>
+              <li>Best practices and code optimization</li>
+            </ul>
+
+            <h3>Career Opportunities</h3>
+            <p>Front-End Developer, Full-Stack Developer, Web Designer, Junior Developer at Tech Companies</p>
+
+            <button onclick="applyCourse('Web Development Certificate')" class="btn-primary">Apply Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-detail" id="ms-office">
+        <div class="course-header">
+          <div class="course-icon-large">📊</div>
+          <h2>Diploma in Microsoft Office</h2>
+        </div>
+        <div class="course-info">
+          <div class="course-meta">
+            <p><strong>Duration:</strong> 8 Weeks</p>
+            <p><strong>Level:</strong> Beginner to Advanced</p>
+            <p><strong>Certificate:</strong> Microsoft Certified</p>
+            <p><strong>Fee:</strong> KSh 75,000</p>
+          </div>
+          <div class="course-content">
+            <h3>Course Overview</h3>
+            <p>Become proficient in the Microsoft Office suite. Learn productivity tools that are essential for every modern professional.</p>
+            
+            <h3>What You'll Learn</h3>
+            <ul>
+              <li>Microsoft Word: Document creation and formatting</li>
+              <li>Microsoft Excel: Data analysis and advanced formulas</li>
+              <li>Microsoft PowerPoint: Professional presentations</li>
+              <li>Microsoft Access: Database creation and management</li>
+              <li>Excel pivot tables and charts</li>
+              <li>Mail merge and automation features</li>
+              <li>Data visualization techniques</li>
+              <li>Office integration and collaboration tools</li>
+            </ul>
+
+            <h3>Career Opportunities</h3>
+            <p>Administrative Assistant, Data Analyst, Office Manager, Executive Secretary, Business Analyst</p>
+
+            <button onclick="applyCourse('Microsoft Office Diploma')" class="btn-primary">Apply Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-detail" id="graphic-design">
+        <div class="course-header">
+          <div class="course-icon-large">🎨</div>
+          <h2>Certificate in Graphic Design</h2>
+        </div>
+        <div class="course-info">
+          <div class="course-meta">
+            <p><strong>Duration:</strong> 10 Weeks</p>
+            <p><strong>Level:</strong> Beginner to Intermediate</p>
+            <p><strong>Certificate:</strong> Professional</p>
+            <p><strong>Fee:</strong> KSh 75,000</p>
+          </div>
+          <div class="course-content">
+            <h3>Course Overview</h3>
+            <p>Learn to create stunning visual designs using industry-standard software. Perfect for aspiring graphic designers and creatives.</p>
+            
+            <h3>What You'll Learn</h3>
+            <ul>
+              <li>Adobe Photoshop: Image editing and manipulation</li>
+              <li>Adobe Illustrator: Vector graphics and illustrations</li>
+              <li>Adobe InDesign: Layout and publishing</li>
+              <li>Color theory and design principles</li>
+              <li>Typography and font selection</li>
+              <li>Logo and branding design</li>
+              <li>Web design fundamentals</li>
+              <li>Portfolio creation and presentation</li>
+            </ul>
+
+            <h3>Career Opportunities</h3>
+            <p>Graphic Designer, UI/UX Designer, Branding Specialist, Marketing Designer, Freelance Designer</p>
+
+            <button onclick="applyCourse('Graphic Design Certificate')" class="btn-primary">Apply Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-detail" id="networking">
+        <div class="course-header">
+          <div class="course-icon-large">🌐</div>
+          <h2>Certificate in Computer Networking</h2>
+        </div>
+        <div class="course-info">
+          <div class="course-meta">
+            <p><strong>Duration:</strong> 14 Weeks</p>
+            <p><strong>Level:</strong> Intermediate to Advanced</p>
+            <p><strong>Certificate:</strong> CompTIA Recognized</p>
+            <p><strong>Fee:</strong> KSh 75,000</p>
+          </div>
+          <div class="course-content">
+            <h3>Course Overview</h3>
+            <p>Master networking fundamentals, administration, and security. Prepare for professional certifications in network administration.</p>
+            
+            <h3>What You'll Learn</h3>
+            <ul>
+              <li>OSI and TCP/IP models</li>
+              <li>Network hardware and protocols</li>
+              <li>IP addressing and subnetting</li>
+              <li>Routers, switches, and firewalls</li>
+              <li>Network security fundamentals</li>
+              <li>Wireless networking</li>
+              <li>VPN and remote access</li>
+              <li>Network troubleshooting and maintenance</li>
+              <li>Hands-on lab exercises</li>
+            </ul>
+
+            <h3>Career Opportunities</h3>
+            <p>Network Administrator, Network Technician, Systems Administrator, IT Support Specialist, Network Engineer</p>
+
+            <button onclick="applyCourse('Computer Networking Certificate')" class="btn-primary">Apply Now</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="comparison-section">
+      <h2>Course Comparison</h2>
+      <div class="comparison-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>Duration</th>
+              <th>Level</th>
+              <th>Fee</th>
+              <th>Certificate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Web Development</td>
+              <td>12 Weeks</td>
+              <td>Beginner-Intermediate</td>
+              <td>KSh 75,000</td>
+              <td>International</td>
+            </tr>
+            <tr>
+              <td>Microsoft Office</td>
+              <td>8 Weeks</td>
+              <td>Beginner-Advanced</td>
+              <td>KSh 75,000</td>
+              <td>Microsoft Certified</td>
+            </tr>
+            <tr>
+              <td>Graphic Design</td>
+              <td>10 Weeks</td>
+              <td>Beginner-Intermediate</td>
+              <td>KSh 75,000</td>
+              <td>Professional</td>
+            </tr>
+            <tr>
+              <td>Computer Networking</td>
+              <td>14 Weeks</td>
+              <td>Intermediate-Advanced</td>
+              <td>KSh 75,000</td>
+              <td>CompTIA Recognized</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 Bridge way Institute OF Technology. All rights reserved.</p>
+      <p>Empowering learners worldwide with quality education.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
