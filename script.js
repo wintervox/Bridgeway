@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (enrollBtn && enrolledCountP) {
     enrollBtn.addEventListener('click', function() {
       enrolledCount += 1;
-      enrolledCountP.innerHTML = 'students enrolled today ' + enrolledCount;
+      enrolledCountP.innerHTML = 'students enrolled today: ' + enrolledCount;
     });
   }
 });
